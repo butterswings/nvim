@@ -9,6 +9,7 @@ return {
     --   },
     -- },
     presets = {
+      -- rounded boarder for lsp hover
       lsp_doc_border = true,
       bottom_search = false,
     },

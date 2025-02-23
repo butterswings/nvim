@@ -3,6 +3,7 @@
 -- or go here and upload the font file: https://mathew-kurian.github.io/CharacterMap/
 -- find more here: https://www.nerdfonts.com/cheat-sheet
 
+-- icons for cmake-tool in lualine
 return {
   kind = {
     Text = "󰦨 ",

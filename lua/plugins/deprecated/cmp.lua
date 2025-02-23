@@ -1,3 +1,5 @@
+-- deprecated
+-- replaced with blink.cmp
 return {
   "hrsh7th/nvim-cmp",
   opts = function(_, opts)

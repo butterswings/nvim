@@ -1,11 +1,12 @@
 return {
   {
-    -- enable LazyVim to load catppuccin
+    -- enable LazyVim to load specified colorscheme
     "LazyVim/LazyVim",
     opts = {
       -- colorscheme = "tokyonight",
       colorscheme = "catppuccin-frappe",
       -- colorscheme = "gruvbox"
+      -- colorscheme = "onedark"
     },
   },
   {
@@ -18,5 +19,15 @@ return {
     "ellisonleao/gruvbox.nvim",
     "yashguptaz/calvera-dark.nvim",
     "sainnhe/everforest",
+  },
+
+  -- rollback to nvim-web-devicons
+  {
+    "nvim-tree/nvim-web-devicons",
+    lazy = true,
+  },
+  {
+    "echasnovski/mini.icons",
+    enabled = false,
   },
 }

@@ -1,3 +1,4 @@
+-- replaced with snacks.dashboard
 return {
   {
     "nvimdev/dashboard-nvim",

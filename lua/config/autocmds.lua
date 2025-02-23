@@ -2,6 +2,7 @@
 -- Default autocmds that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
 -- Add any additional autocmds here
 
+-- close neotree when starting dap-ui
 vim.api.nvim_create_autocmd("BufWinEnter", {
   pattern = "\\[dap-repl-*\\]",
   callback = vim.schedule_wrap(function(args)

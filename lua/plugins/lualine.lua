@@ -177,8 +177,8 @@ return {
       on_click = function(n, mouse)
         if n == 1 then
           if mouse == "l" then
-            -- vim.cmd("CMakeDebug")
-            vim.cmd("DapContinue")
+            vim.cmd("CMakeDebug")
+            -- vim.cmd("DapContinue")
           end
         end
       end,

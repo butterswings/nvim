@@ -1,6 +1,12 @@
 return {
   "neovim/nvim-lspconfig",
   opts = {
+    diagnostics = {
+      -- rounded boarder for keymap <leader>cd
+      float = {
+        border = "rounded",
+      },
+    },
     inlay_hints = {
       enabled = false,
     },
