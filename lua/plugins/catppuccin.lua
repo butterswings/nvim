@@ -9,6 +9,7 @@ return {
     },
     term_colors = true, -- sets terminal colors (e.g. `g:terminal_color_0`)
     transparent_background = false,
+    -- no_italic = true,
     styles = { -- Handles the styles of general hi groups (see `:h highlight-args`):
       comments = { "italic" }, -- Change the style of comments
       conditionals = {},
