@@ -6,10 +6,8 @@
 vim.api.nvim_create_autocmd("BufWinEnter", {
   pattern = "\\[dap-repl-*\\]",
   callback = vim.schedule_wrap(function(args)
+    -- focus dap-repl and close neo-tree when opening
     vim.api.nvim_set_current_win(vim.fn.bufwinid(args.buf))
-    vim.api.nvim_input("<space>ub")
-    vim.api.nvim_input("<space>ub")
-    vim.api.nvim_input("<space>snd")
     for _, win in ipairs(vim.api.nvim_list_wins()) do
       local bufname = vim.api.nvim_buf_get_name(vim.api.nvim_win_get_buf(win))
       if string.match(bufname, "neo%-tree") then
@@ -18,3 +16,9 @@ vim.api.nvim_create_autocmd("BufWinEnter", {
     end
   end),
 })
+
+-- correct the color of bar and dismiss the noice
+--
+-- vim.api.nvim_input("<space>ub")
+-- vim.api.nvim_input("<space>ub")
+-- vim.api.nvim_input("<space>snd")
