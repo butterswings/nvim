@@ -39,8 +39,11 @@ return {
     local cmake = require("cmake-tools")
     local icons = require("config.icons")
 
-    local Toolkits = "🛠️"
-    local Search = "🔍"
+    -- local Toolkits = "🛠️"
+    -- local Search = "🔍"
+    local Search = ""
+    local Toolkits = ""
+
     -- local Gear = "⚙️"
 
     local function ins_left(component)
