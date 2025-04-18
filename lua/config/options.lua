@@ -3,7 +3,8 @@
 -- Add any additional options here
 
 -- neovide
-if vim.fn.exists("g:neovide") then
+if vim.g.neovide then
+  vim.g.neovide_title_text_color = "pink"
   vim.g.neovide_floating_shadow = true
   vim.g.neovide_fullscreen = true
   vim.g.neovide_hide_mouse_when_typing = true
@@ -12,6 +13,10 @@ if vim.fn.exists("g:neovide") then
   -- vim.o.guifont = "Hack Nerd Font:h13"
 end
 
+-- nvy
+if vim.g.nvy then
+  vim.o.guifont = "JetBrainsMono Nerd Font:h13"
+end
 -- if vim.fn.exists("g:gonvim_running") then
 --   vim.o.guifont = "JetBrainsMono NF:h13"
 -- end
@@ -25,6 +30,17 @@ vim.wo.relativenumber = false
 vim.o.backup = false
 vim.o.writebackup = false
 vim.o.swapfile = false
+
+-- vim.diagnostic.config({
+--   -- Use the default configuration
+--   virtual_lines = true
+--
+--   -- Alternatively, customize specific options
+--   -- virtual_lines = {
+--   --  -- Only show virtual line diagnostics for the current cursor line
+--   --  current_line = true,
+--   -- },
+-- })
 
 -- vim.o.shadafile = "NONE"
 
