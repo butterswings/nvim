@@ -9,6 +9,15 @@ if vim.g.neovide then
   vim.g.neovide_fullscreen = true
   vim.g.neovide_hide_mouse_when_typing = true
   vim.o.guifont = "JetBrainsMono Nerd Font:h13"
+
+  vim.keymap.set("n", "<F11>", function()
+    if vim.g.neovide_fullscreen then
+      vim.g.neovide_fullscreen = false
+    else
+      vim.g.neovide_fullscreen = true
+    end
+  end, { noremap = true, silent = true })
+
   -- vim.o.guifont = "CaskaydiaCove Nerd Font:h13"
   -- vim.o.guifont = "Hack Nerd Font:h13"
 
