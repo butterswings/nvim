@@ -14,10 +14,10 @@ if vim.g.neovide then
     if vim.g.neovide_fullscreen then
       -- #B0BACD
       vim.g.neovide_fullscreen = false
-      vim.cmd('colorscheme catppuccin-latte')
+      vim.cmd.colorscheme('catppuccin-latte')
     else
       vim.g.neovide_fullscreen = true
-      vim.cmd('colorscheme catppuccin-frappe')
+      vim.cmd.colorscheme('catppuccin-frappe')
     end
   end, { noremap = true, silent = true })
 
