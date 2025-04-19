@@ -12,10 +12,12 @@ if vim.g.neovide then
 
   vim.keymap.set("n", "<F11>", function()
     if vim.g.neovide_fullscreen then
+      -- #B0BACD
       vim.g.neovide_fullscreen = false
     else
       vim.g.neovide_fullscreen = true
     end
+    vim.api.nvim_input("<leader>ub")
   end, { noremap = true, silent = true })
 
   -- vim.o.guifont = "CaskaydiaCove Nerd Font:h13"
