@@ -17,6 +17,17 @@ vim.api.nvim_create_autocmd("BufWinEnter", {
   end),
 })
 
+vim.api.nvim_create_autocmd({ "VimEnter", "BufRead", "BufNewFile" }, {
+  callback = function()
+    local current_dir = vim.fn.getcwd()
+    if vim.fn.filereadable(current_dir .. "/pom.xml") then
+      vim.opt_local.shiftwidth = 4
+    else
+      vim.opt_local.shiftwidth = 2
+    end
+  end,
+})
+
 -- correct the color of bar and dismiss the noice
 --
 -- vim.api.nvim_input("<space>ub")
