@@ -8,16 +8,16 @@ if vim.g.neovide then
   vim.g.neovide_floating_shadow = true
   vim.g.neovide_fullscreen = true
   vim.g.neovide_hide_mouse_when_typing = true
-  vim.o.guifont = "JetBrainsMono Nerd Font:h13"
+  vim.o.guifont = "JetBrainsMono Nerd Font:h11"
 
   vim.keymap.set("n", "<F11>", function()
     if vim.g.neovide_fullscreen then
       -- #B0BACD
       vim.g.neovide_fullscreen = false
-      vim.cmd.colorscheme('catppuccin-latte')
+      -- vim.cmd.colorscheme('catppuccin-latte')
     else
       vim.g.neovide_fullscreen = true
-      vim.cmd.colorscheme('catppuccin-frappe')
+      -- vim.cmd.colorscheme('catppuccin-frappe')
     end
   end, { noremap = true, silent = true })
 
@@ -29,7 +29,7 @@ end
 
 -- nvy
 if vim.g.nvy then
-  vim.o.guifont = "JetBrainsMono Nerd Font:h13"
+  vim.o.guifont = "JetBrainsMono Nerd Font:h11"
 end
 -- if vim.fn.exists("g:gonvim_running") then
 --   vim.o.guifont = "JetBrainsMono NF:h13"
