@@ -19,6 +19,7 @@ return {
     "ellisonleao/gruvbox.nvim",
     "yashguptaz/calvera-dark.nvim",
     "sainnhe/everforest",
+    "sainnhe/edge",
   },
 
   -- rollback to nvim-web-devicons
