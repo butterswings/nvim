@@ -27,7 +27,7 @@ return {
     lazy = true,
   },
   {
-    "echasnovski/mini.icons",
+    "nvim-mini/mini.icons",
     enabled = false,
   },
 }
