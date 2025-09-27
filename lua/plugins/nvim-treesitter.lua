@@ -1,7 +1,7 @@
 return {
   "nvim-treesitter/nvim-treesitter",
 
-  -- branch = "fix/matches",
+  -- branch = "master",
   opts = {
     indent = { enable = false },
   },
