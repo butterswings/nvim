@@ -6,9 +6,9 @@
 if vim.g.neovide then
   vim.g.neovide_cursor_animation_length = 0
   vim.g.neovide_floating_shadow = true
-  vim.g.neovide_fullscreen = true
-  vim.g.neovide_hide_mouse_when_typing = true
-  vim.o.guifont = "JetBrainsMono Nerd Font:h11"
+  vim.g.neovide_fullscreen = false
+  vim.g.neovide_hide_mouse_when_typing = false
+  vim.o.guifont = "JetBrainsMono Nerd Font:h12"
 
   vim.keymap.set("n", "<F11>", function()
     if vim.g.neovide_fullscreen then
