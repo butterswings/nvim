@@ -1,7 +1,7 @@
 return {
   {
     "gorbit99/codewindow.nvim",
-    -- enabled = false,
+    enabled = false,
     keys = {
       {
         "<leader>um",
