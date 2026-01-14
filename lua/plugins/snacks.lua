@@ -15,6 +15,12 @@ return {
     },
     scroll = { enabled = false },
     notifier = { enabled = false },
+    -- git = { enabled = true },
+    lazygit = { enabled = true },
+    -- gitbrowser = { enabled = true },
+    -- statuscolumn = { enabled = true },
+    -- win = { enabled = true },
+
     -- explorer = {
     --   hidden = true,
     --   ignored = true,
