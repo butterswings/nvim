@@ -7,6 +7,10 @@ return {
       light = "latte",
       dark = "frappe",
     },
+    float = {
+      transparent = true,
+      solid = false,
+    },
     term_colors = true, -- sets terminal colors (e.g. `g:terminal_color_0`)
     transparent_background = false,
     no_italic = true,
